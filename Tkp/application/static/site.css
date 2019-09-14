@@ -1,0 +1,55 @@
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+}
+
+container span{
+    
+    text-transform:  uppercase;
+    display: block;
+
+}
+
+.text1{
+    font-size: 60px;
+    color: #f0932b;
+    font-weight:700;
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+    position:relative;
+    opacity: 0.8;
+    background: #dcdde1;
+    animation: text 3s 1;
+    
+}
+
+@keyframes text{
+    0%{
+        color:#dcdde1;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}

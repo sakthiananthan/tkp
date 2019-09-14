@@ -1,0 +1,106 @@
+@import url('http://fonts.googleapis.com/css?family=poppins:100,200,300,400,500,600,700,800,900');
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+    position: relative;
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 10%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.container .box{
+    position: relative;
+    height: 400px;
+    background: #596275;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    justify-content: center;
+    
+
+}
+
+.container .box:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg,2deg);
+    z-index: -1;
+    gap :40px;
+    justify-content: center;
+    align-items: center;
+}
+.container .box:before
+{
+    background: linear-gradient(315deg,#fed330,#fa8231);
+}
+
+.content{
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+
+.box .content h2{
+    position: absolute;
+    top: -30px;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color: rgba(255,255,255,0.5);
+    transition: 0.5s
+}
+
+.box:hover .content h2{
+    top:-100px;
+
+}
+
+.box .content p{
+    margin : 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.box .content form input[type="submit"]{
+    border:0;
+    bottom: -200px;
+	background: none;
+	display: block;
+	margin:20px auto;
+	text-align: center;
+	border:2px solid #26de81;
+	padding:14px 40px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+.box .content form input[type="submit"]:hover{
+    background: #2ecc71;
+}
